@@ -35,7 +35,12 @@ if command:
     elif "who created you" in command:
         with st.chat_message("BOT"):
             st.write("The AI assistent is created by hariharan ethical hacker and aspiring cloud security engineer ")
-            st.session_state.message.append({"role":"BOT","message":"AI Assistant"})
+            st.session_state.message.append({"role":"BOT","message":"The AI assistent is created by hariharan ethical hacker and aspiring cloud security engineer"})
+    elif "kavi" in command:
+        with st.chat_message("BOT"):
+            st.write("kavi is hariharan's sister")
+            st.session_state.message.append({"role":"BOT","message":"kavi is hariharan's sister"})
+
     else:
         with st.chat_message("BOT"):
             data = ai(command)
